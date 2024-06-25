@@ -1,0 +1,18 @@
+/*Стили для блока информации о странице */
+.page-info {
+  background-color: #f8f9fa; /*Светло-серый фон */
+  padding: 1.5rem;
+  border-radius: 8px; /*Скругленные углы */
+  margin-bottom: 2rem;
+}
+
+.page-info__title {
+  font-size: 1.25rem;
+  font-weight: 600; /*Полужирный шрифт */
+  margin-bottom: 0.5rem;
+}
+
+.page-info__description {
+  font-size: 0.9rem;
+  line-height: 1.5; /*Межстрочный интервал */
+}

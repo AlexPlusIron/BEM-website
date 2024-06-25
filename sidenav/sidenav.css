@@ -1,0 +1,73 @@
+/*Основные стили боковой панели */
+.sidenav {
+  height: 100%;
+  width: 0; /*Боковая панель скрыта по умолчанию */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/*Стили для навигации внутри боковой панели */
+.sidenav__navigation {
+  padding: 20px;
+}
+
+/*Стили для списка элементов меню */
+.sidenav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Стили для элементов меню */
+.sidenav__item {
+  margin-bottom: 5px;
+}
+
+/*Стили для ссылок в меню */
+.sidenav__link {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  transition: 0.3s;
+}
+
+/*Изменение цвета ссылки при наведении */
+.sidenav__link:hover {
+  color: #900f0f;
+}
+
+/*Стили для кнопки закрытия */
+.sidenav__close-button {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-color: transparent;
+  border: none;
+  color: #818181;
+}
+
+/*Изменение цвета кнопки закрытия при наведении */
+.sidenav__close-button:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+/*Стили для медиа-запросов (адаптивность) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

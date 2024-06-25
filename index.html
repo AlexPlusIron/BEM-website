@@ -1,0 +1,467 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Интернет-магазин запчастей</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <link href="sidenav/sidenav.css" rel="stylesheet">
+    <link href="info-block/info-block.css" rel="stylesheet">
+    <link href="article/article.css" rel="stylesheet">
+    <link href="page-info/page-info.css" rel="stylesheet">
+    <link href="modal/modal.css" rel="stylesheet">
+    <link href="header/header.css" rel="stylesheet">
+    <link href="carousel/carousel.css" rel="stylesheet">
+    <link href="news-block/news-block.css" rel="stylesheet">
+    <link href="form/form.css" rel="stylesheet">
+    <link href="footer/footer.css" rel="stylesheet">
+  </head>
+
+  
+  <body>
+
+    <div class="sidenav" id="mySidenav">
+      <button class="sidenav__close-button" onclick="closeNav()">
+        <span class="sidenav__close-button-icon">&times;</span>
+      </button>
+      <nav class="sidenav__navigation">
+        <ul class="sidenav__list">
+          <li class="sidenav__item">
+            <a href="#text1" class="sidenav__link">Направления</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="#text2" class="sidenav__link">Поставщики</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="#text3" class="sidenav__link">Правовая форма</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="#text4" class="sidenav__link">Интернет-магазин</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="#text5" class="sidenav__link">Оптимизация</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="#text6" class="sidenav__link">Расположение</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="#text7" class="sidenav__link">Софт/железо</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="#text8" class="sidenav__link">Персонал</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="#text9" class="sidenav__link">Документооборот</a>
+          </li>
+          <li class="sidenav__item">
+            <a href="#text10" class="sidenav__link">Бюджет/план</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+   
+
+
+
+    
+
+    
+<div id="main00">
+      
+  <button class="login-button" onclick="document.getElementById('login-modal').style.display='block'">
+    Login
+  </button>
+  
+  <div id="login-modal" class="modal">
+    <form class="modal__content animate">
+      <div class="modal__header">
+        <span class="modal__close" onclick="document.getElementById('login-modal').style.display='none'" title="Close Modal">×</span>
+        <img src="images/img_avatar2.png" alt="Avatar" class="modal__avatar">
+      </div>
+  
+      <div class="modal__body">
+        <label for="uname" class="modal__label">Username</label>
+        <input type="text" id="uname" class="modal__input" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw" class="modal__label">Password</label>
+        <input type="password" id="psw" class="modal__input" placeholder="Enter Password" name="psw" required>
+  
+        <button type="submit" class="modal__submit">Login</button>
+        <label class="modal__remember">
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="modal__footer">
+        <button type="button" class="modal__cancel" onclick="document.getElementById('login-modal').style.display='none'">Cancel</button>
+        <span class="modal__forgot-password">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <header class="header">
+      <div class="header__row row">
+        <div class="header__author col-2">
+          Плющев А.Ю.
+        </div>
+        <div class="header__title-container col-8">
+          <h1 class="header__title">Магазин запчастей ALEXSTORE</h1>
+        </div>
+        <div class="header__logo-container col-2 d-none d-lg-block">
+          <figure class="header__logo-figure">
+            <img src="images/logo.png" width="50" height="50" class="header__logo" alt="Логотип ALEXSTORE">
+          </figure>
+        </div>
+      </div>
+    </header>
+  
+    <button class="menu-button" onclick="openNav()">
+      <span class="menu-button__icon">☰</span> меню
+    </button>
+  </div>
+
+
+<main class="container">
+
+  <div class="carousel-container shadow">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel__indicators carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="carousel__indicator active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="carousel__indicator" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel__inner carousel-inner">
+        <div class="carousel__item carousel-item active">
+          <img src="images/avtozapchasti-fon-36.jpg" class="carousel__image d-block w-100" alt="Слайд 1">
+          <div class="carousel__caption carousel-caption d-none d-md-block">
+            <h5 class="carousel__title display-16 fw-normal text-center">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ / САЙТ ПРОДАЖИ ЗАПЧАСТЕЙ</h5>
+            <p class="carousel__text card-text mb-auto">Автозапчасти – категория товаров, которая подходит для продажи через Интернет. Это связано с тем, что поиск запчастей самим покупателем или менеджером-консультантом осуществляется по номеру запчасти (артикулу) в онлайн-каталогах.</p>
+          </div>
+        </div>
+        <div class="carousel__item carousel-item">
+          <img src="images/avtozapchasti-fon-56.jpg" class="carousel__image d-block w-100" alt="Слайд 2">
+          <div class="carousel__caption carousel-caption d-none d-md-block">
+            <h5 class="carousel__title display-16 fw-normal text-center">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ / САЙТ ПРОДАЖИ ЗАПЧАСТЕЙ</h5>
+            <p class="carousel__text card-text mb-auto">Автозапчасти – категория товаров, которая подходит для продажи через Интернет. Это связано с тем, что поиск запчастей самим покупателем или менеджером-консультантом осуществляется по номеру запчасти (артикулу) в онлайн-каталогах.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel__control-prev carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel__control-prev-icon carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button class="carousel__control-next carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel__control-next-icon carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+    </div>
+  </div>
+  
+
+
+   <div class="news-block news-block--popup">
+      <span class="news-block__popup" id="popup1">
+        У нас открылась новая точка выдачи товаров и запчастей. Для вашего удобства обустроена парковка на 10 автомобилей, навесы для небольшого ремонта, указатели к точке выдачи. Рядом расположены шиномонтаж и мойка самообслуживания.
+      </span>
+
+      <div class="news-block__content row g-0 overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative text-bg-light">
+        <div class="news-block__text col p-4 d-flex flex-column position-static">
+          <strong class="news-block__category d-inline-block mb-2 text-primary">Новости</strong>
+          <h6 class="news-block__title mb-0">Открыта новая точка выдачи</h6>
+          <div class="news-block__date mb-1 text-muted">15.02.2023</div>
+          <p class="news-block__description card-text mb-auto">По адресу г.Ленинск, ул.Ленина, 25 открылась наша новая точка выдачи заказов.</p>
+          <a href="#" class="news-block__link stretched-link">Читать дальше...</a>
+        </div>
+        <div class="news-block__image-container col-auto d-none d-lg-block">
+          <img src="images/point.png" width="200" height="200" class="news-block__image img-fluid rounded" alt="Новая точка выдачи">
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="news-block news-block--popup">
+      <span class="news-block__popup" id="popup2">
+        Комплекты для проведения технического обслуживания автомобиля включают в себя: воздушный фильтр двигателя, фильтр салона, масляный фильтр, масло в объеме необходимом для вашего автомобиля. При необходимости можно добавить топливный фильтр для бензиновой или дизельной систем.
+      </span>
+
+      <div class="news-block__content row g-0 overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative text-bg-light">
+        <div class="news-block__text col p-4 d-flex flex-column position-static">
+          <strong class="news-block__category d-inline-block mb-2 text-success">Горячие предложения</strong>
+          <h6 class="news-block__title mb-0">Комплекты для ТО со скидкой</h6>
+          <div class="news-block__date mb-1 text-muted">20.12.2022</div>
+          <p class="news-block__description mb-auto">Предлагаем к приобретению комплекты для проведения технического обслуживания вашего автомобиля. Скидка на комплект до 15%.</p>
+          <a href="#" class="news-block__link stretched-link">Читать дальше...</a>
+        </div>
+        <div class="news-block__image-container col-auto d-none d-lg-block">
+          <img src="images/service.png" width="200" height="200" class="news-block__image img-fluid rounded" alt="Комплекты для ТО">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  <div class="row g-5">
+
+    <div class="col-md-8">
+      <article class="article">
+        <h2 class="article__title" id="text_main">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ / САЙТ ПРОДАЖИ ЗАПЧАСТЕЙ</h2>
+        <p class="article__meta">
+          <span class="article__meta-date">20 февраля 2022</span> 
+          <a href="#" class="article__meta-author">Плющев А.Ю.</a>
+        </p>
+  
+        <p class="article__text">Автозапчасти – категория товаров, которая подходит для продажи через Интернет. Это связано с тем, что поиск запчастей самим покупателем или менеджером-консультантом осуществляется по номеру запчасти (артикулу) в онлайн-каталогах. При этом знакомиться с товаром до его покупки в случае с автозапчастями покупателю не требуется, т.к. потребительские свойства запчастей имеют вторичное значение.</p>
+  
+        <p class="article__text">Главное, чтобы запчасть точно подходила к его автомобилю, была качественной и недорогой. Более того, запчасти для одного и того же узла автомобиля, произведенные разными производителями имеют одинаковую конструкцию. Это позволяет продавать запчасти именно через интернет.</p>
+  
+        <section class="article__section"> 
+          <h3 class="article__subtitle" id="text1">1. Выбор основных направлений развития продаж</h3>
+          <p class="article__text"><p>Определить "локомотивные" товарные группы (учитывая особенности региона) для развития будущего интернет-магазина и выстроить их по степени приоритетности, в зависимости от региона.</p></p>
+        </section>
+        
+        <hr class="article__divider">
+  
+        <section class="article__section">
+          <h3 class="article__subtitle" id="text2">2. Поставщики запчастей: выбор, критерии отбора</h3>
+          <p class="article__text"><p>Выбрать трех-четырех поставщиков: одного-двух региональных и двух федеральных, которые смогут предоставить хорошую цену на период развития интернет-магазина, с бесплатной доставкой до магазина или точки выдачи, а также с приемлемыми условиями возврата товара. Желательно наличие возможности получать данные о ценах и наличии товара у поставщика в режиме реального времени без необходимости обновлять прайс-листы.</p></p>
+        </section>
+  
+        <hr class="article__divider">
+  
+        <section class="article__section">
+          <h3 class="article__subtitle" id="text3">3. Организационно правовая форма, налогообложение, бухгалтерия</h3>
+          <p class="article__text"><p>Для открытия бизнеса по продаже автозапчастей через интернет-магазин со стационарной точкой выдачи товара потребуется открытие ИП с выбором системы налогообложения – УСН (доходы минус расходы) и регистрацией спецрежима – ЕНВД. Это позволит значительно сэкономить на налоговых выплатах.</p>
+          <p>Бухгалтерию отдать на аутсорсинг. Важно, чтобы в договоре с бухгалтерской компанией была прописана ответственность последней за все проводимые ею операции по бухгалтерскому учету.</p></p>
+        </section>
+  
+        <hr class="article__divider">
+  
+        <section class="article__section">
+          <h3 class="article__subtitle" id="text4">4. Интернет-магазин и его организация</h3>
+          <p class="article__text"><p>Определиться с товарными группами запчастей, которые будут локомотивными для интернет-магазина. Это может быть физическое складское наличие поставщика, из которого можно создать каталог простого подбора по марке автомобиля.</p>
+          <p>Продумать какие разделы будут формироваться в первую очередь. Например: главная страница, поиск по номеру, поиск по каталогу, оплата, доставка, контакты – это стандартные страницы. К ним необходимо добавить разделы по продвигаемым товарам, например: каталог наличия, кузовные запчасти, запчасти для ТО и т.д.</p>
+          <p>Придумать дизайн сайта.</p>
+          <p>Наполнение Интернет-Магазина товаром: подключение складов поставщиков автозапчастей, загрузка собственных прайс-листов, а также поставщиков, у которых нет автоматизированной выгрузки остатков.</p></p>
+        </section>
+  
+        <hr class="article__divider">
+  
+        <section class="article__section">
+          <h3 class="article__subtitle" id="text5">5. Оптимизация под поисковые запросы (SEO) и расходы на контекстную рекламу</h3>
+          <p class="article__text"><p>Сайт или интернет-магазин, при открытии, должен быть зарегистрирован в специальных сервисах Яндекса.Вебмастер и Google Search Console. В противном случае ожидание, когда поисковый робот сам отыщет сайт в интернете, проиндексирует его страницы и начнет ставить в поисковую выдачу, может занять продолжительное время.</p>
+          <p>Для того, чтобы страницы сайта правильно были проиндексированы поисковыми роботами и были загружены в поисковую базу, они должны быть оптимизированы под соответствующие (релевантные) поисковые запросы. На всех страницах сайта должны быть правильно настроены параметры, по которым поисковые роботы определяют их соответствие поисковым запросам.</p>
+          <p>Оперативно и в нужном количестве получить целевой трафик на сайт, можно за счет контекстной рекламы в Яндекс.Директ и Google ADS. Контекстная реклама поможет достичь появления сайта на первых позициях поисковой выдачи.</p></p>
+        </section>
+  
+        <hr class="article__divider">
+  
+        <section class="article__section">
+          <h3 class="article__subtitle" id="text6">6. Месторасположение магазина/точки выдачи</h3>
+          <p class="article__text"><p>Подыскать место под точку выдачи заказов таким образом, чтобы клиенту было удобно добраться на любом виде транспорта, плюс наличие небольшой парковки для автомобилей клиентов. Площадь точки выдачи – достаточно 20-30 м2. Помещение должно быть в зоне доступа надежного интернет-провайдера. Всю мебель и технику можно подобрать б/у на торговых площадках, чтобы не переплачивать за новую. Необходимо оборудовать точку выдачи вывеской и графиком работы.</p></p>
+        </section>
+  
+        <hr class="article__divider">
+  
+        <section class="article__section">
+          <h3 class="article__subtitle" id="text7">7. Программное обеспечение для магазина</h3>
+          <p class="article__text"><p>В магазине должны быть установлены лицензионные версии ОС и другого программного обеспечения. Офисные программы для работы можно найти в бесплатных версиях. Для складского учета и работы с клиентами, на начальном этапе, используются возможности файловой системы ОС и офисных приложений MS Office: их хватит, чтобы контролировать работу интернет-магазина с точкой выдачи товара. По мере роста продаж и доходности можно спланировать переход на специализированно программное обеспечение для бухгалтерии и складского учета, такие как облачные сервисы или торгово-складские решения от компании 1С. Необходимо выбрать решение с профессиональными каталогами подбора автозапчастей для работы магазина.</p></p>
+        </section>
+  
+        <hr class="article__divider">
+  
+        <section class="article__section">
+          <h3 class="article__subtitle" id="text8">8. Персонал: заработная плата и график работы</h3>
+          <p class="article__text"><p>Обычно бизнес решают открывать группа единомышленников, которые готовы сами работать в качестве продавцов, складских работников и так далее. Часто группа единомышленников состоит из двух человек. Здесь рассматривается вариант, когда предприниматель, он же владелец магазина (работает также менеджером и кладовщиком) нанимает себе в помощь продавца автозапчастей.</p>
+          <p>Желательно автомобильное или просто техническое образование, а также хорошее знание устройства автомобилей. Умение пользоваться электронными каталогами подбора запчастей на различные автомобили иностранного производства. Желателен опыт работы в данной сфере деятельности, особенно в регионе открытия, так как кандидат уже будет иметь представление как работать с местными поставщиками и клиентами. Наличие автомобиля приветствуется, так как возможно потребуется внедрить услугу доставки товара и можно предложить продавцу взять это направление в качестве подработки в нерабочее время.</p>
+          <p>В определении мотивации продавца надо ориентироваться, что в его работу входит консультация клиентов, подбор запчастей, формирование заказа клиенту, заказ товара и взаимодействие с поставщиком по доставке, оприходование, выдача клиенту, а также проведение финансовых операций с клиентом и возможная доставка товара до клиента.</p>
+          <p>График работы точки выдачи на первое время охватывает будние дни, с 9 утра до 7 вечера, а также субботний день, как дежурный, с 10 до 14 часов. В дальнейшем, по мере роста оборотов, доходов, а также штата работников магазина необходимо будет выходить на каждодневный график работы с 9 до 20.</p>
+          <p>Заявки клиентов в интернет-магазине принимаются в автоматическом режиме, главное не забывать их обрабатывать.</p></p>
+        </section>
+  
+        <hr class="article__divider">
+  
+        <section class="article__section">
+          <h3 class="article__subtitle" id="text9">9. Организация документооборота в магазине</h3>
+          <p class="article__text"><p>С самого начала работы предприятия внедряется систему строгого документооборота. Это позволяет вести четкий учет движения товара, а также контролировать взаимодействие с поставщиками и клиентами, что позволит избежать возможных неприятных ситуаций.</p></p>
+        </section>
+  
+        <hr class="article__divider">
+  
+        <section class="article__section">
+          <h3 class="article__subtitle" id="text10">10. Расчет бюджета и планирование работы</h3>
+          <p class="article__text"><p>По результатам работы предпринимателю периодически требуется проводить бюджетирование и планирование работы магазина и точки выдачи с целью выявления проблемных зон и слабых мест в процессах и финансах. Цель состоит в том, чтобы обеспечить деятельность необходимыми ресурсами, в том числе финансовыми: распределить имеющиеся ресурсы и спланировать новые поступления в будущем.</p></p>
+        </section>
+  
+      </article>
+    </div>
+
+
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        
+        <div class="page-info">
+          <h4 class="page-info__title">О странице</h4>
+          <p class="page-info__description">На данной странице представлено эссе по проекту создания интернет-магазина продажи запчастей, предложенное для выполнения КТ по предмету "Управление проектами".</p>
+        </div>
+
+       
+
+        <div class="info-block">
+          <h4 class="info-block__title">Информация</h4>
+          <ul class="info-block__list">
+            <li class="info-block__item">
+              <button class="info-block__accordion">
+                <a class="info-block__accordion-link">Контакты</a>
+              </button>
+              <div class="info-block__panel">
+                <p class="info-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </li>
+            <li class="info-block__item">
+              <button class="info-block__accordion">
+                <a class="info-block__accordion-link">Почему мы?</a>
+              </button>
+              <div class="info-block__panel">
+                <p class="info-block__text">Quisque sed tristique justo, nec ultrices magna.</p>
+              </div>
+            </li>
+            <li class="info-block__item">
+              <button class="info-block__accordion">
+                <a class="info-block__accordion-link">Отзывы клиентов</a>
+              </button>
+              <div class="info-block__panel">
+                <p class="info-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </li>
+            <li class="info-block__item">
+              <button class="info-block__accordion">
+                <a class="info-block__accordion-link">Другие услуги</a>
+              </button>
+              <div class="info-block__panel">
+                <p class="info-block__text">Quisque sed tristique justo, nec ultrices magna.</p>
+              </div>
+            </li>
+            <li class="info-block__item">
+              <button class="info-block__accordion">
+                <a class="info-block__accordion-link">Доставка</a>
+              </button>
+              <div class="info-block__panel">
+                <p class="info-block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </li>
+            <li class="info-block__item">
+              <button class="info-block__accordion">
+                <a class="info-block__accordion-link">Возврат товара</a>
+              </button>
+              <div class="info-block__panel">
+                <p class="info-block__text">Quisque sed tristique justo, nec ultrices magna.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+
+  <form class="form form_width_max">
+    <div class="form__field">
+      <label class="form__label" for="exampleInputName1">Enter your name</label>
+      <input class="form__input" type="name" id="exampleInputName1">
+    </div>
+    <div class="form__field">
+      <label class="form__label" for="exampleInputEmail1">Email address</label>
+      <input class="form__input" type="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div class="form__help" id="emailHelp">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="form__field form__field_type_checkbox">
+      <label class="form__checkbox-wrapper"> 
+        <input class="form__checkbox" type="checkbox" id="exampleCheck1">
+        <span class="form__checkbox-text">I accept the Terms of Service</span>
+      </label>
+    </div>
+    <div class="form__actions">
+      <button class="button button_theme_primary" type="submit">Submit</button>
+    </div>
+  </form>
+  
+</main>
+
+
+
+<footer class="footer">
+  <div class="footer__content">
+    <p class="footer__text">
+      Проект лэндинга разработан по заказу 
+      <a href="#" class="footer__link">ООО AlexStore</a> 
+      с использованием 
+      <a href="#" class="footer__link">bootstrap, javascript, css</a>.
+    </p>
+    <p class="footer__top">
+      <a href="#" class="footer__link">Back to top</a>
+    </p>
+  </div>
+</footer>
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+<script>
+  const accordions = document.querySelectorAll(".info-block__accordion");
+
+  accordions.forEach(accordion => {
+    accordion.addEventListener("click", function() {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px"; 
+      } 
+    });
+  });
+</script>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main00").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main00").style.marginLeft= "0";
+}
+  </script>
+
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+</script>
+    
+
+
+
+  </body>
+</html>

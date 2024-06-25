@@ -1,0 +1,58 @@
+/*Базовые стили */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/*Стили шапки сайта */
+.header {
+  background-color: #f8f8f8; /*Светло-серый фон */
+  padding: 1rem 0; /*Отступы сверху и снизу */
+}
+
+.header__row {
+  display: flex;
+  align-items: center; /*Выравнивание элементов по вертикали */
+}
+
+.header__author {
+  font-size: 1rem;
+  color: #6c757d; /*Темно-серый цвет */
+}
+
+.header__title-container {
+  text-align: center; /*Выравнивание заголовка по центру */
+}
+
+.header__title {
+  font-size: 1.8rem;
+  font-weight: 600; /*Полужирный шрифт */
+  letter-spacing: -1px;
+}
+
+.header__logo-container {
+  margin-left: auto; /*Прижимаем логотип к правому краю */
+}
+
+.header__logo {
+  border-radius: 50%; /*Скругляем углы логотипа */
+}
+
+/*Стили кнопки меню */
+.menu-button {
+  background-color: transparent; /*Прозрачный фон */
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease; /*Плавный переход при наведении */
+}
+
+.menu-button:hover {
+  background-color: #e9ecef; /*Светло-серый фон при наведении */
+}
+
+.menu-button__icon {
+  margin-right: 0.5rem; /*Отступ между иконкой и текстом */
+}

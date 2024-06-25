@@ -1,0 +1,56 @@
+/*Стили статьи */
+.article {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.article__meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.article__meta-date {
+  margin-right: 1rem;
+}
+
+.article__meta-author {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.article__meta-author:hover {
+  text-decoration: underline;
+}
+
+.article__text {
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+/*Стили разделов */
+.article__section {
+  margin-bottom: 2rem;
+}
+
+.article__subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/*Стили разделителя */
+.article__divider {
+  border: 0;
+  height: 1px;
+  background-color: rgb(99, 99, 99);
+  margin: 2rem 0;
+}

@@ -1,0 +1,29 @@
+.footer {
+    background-color: #f8f9fa; /*Цвет фона футера */
+    padding: 2rem 0; /*Отступы сверху и снизу */
+    text-align: center; /*Выравнивание текста по центру */
+  }
+  
+  .footer__content {
+    max-width: 960px; /*Максимальная ширина контента футера */
+    margin: 0 auto; /*Центрирование контента */
+  }
+  
+  .footer__text {
+    font-size: 0.9rem; /*Размер шрифта текста */
+    color: #6c757d; /*Цвет текста */
+  }
+  
+  .footer__link {
+    color: #007bff; /*Цвет ссылок */
+    text-decoration: none; /*Убираем подчеркивание ссылок */
+  }
+  
+  .footer__link:hover {
+    text-decoration: underline; /*Подчеркивание ссылки при наведении */
+  }
+  
+  .footer__top {
+    margin-top: 1rem; /*Отступ сверху для ссылки "Back to top" */
+  }
+  

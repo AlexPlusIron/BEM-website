@@ -1,0 +1,71 @@
+/*Стили для блока информации */
+.info-block {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*Стили для заголовка блока */
+.info-block__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/*Стили для списка элементов */
+.info-block__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*Стили для элемента списка */
+.info-block__item {
+  margin-bottom: 10px;
+}
+
+/*Стили для кнопки аккордеона */
+.info-block__accordion {
+  background-color: transparent;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
+
+/*Стили для ссылки внутри кнопки аккордеона */
+.info-block__accordion-link {
+  text-decoration: none;
+  color: #333;
+}
+
+/*Стили для панели аккордеона */
+.info-block__panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*Стили для текста внутри панели аккордеона */
+.info-block__text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/*Стили для активного аккордеона */
+.info-block__accordion.active {
+  /*Добавьте стили для активной кнопки, например, измените цвет фона */
+  color: grey;
+}
+
+/*Стили для панели аккордеона */
+.info-block__panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
